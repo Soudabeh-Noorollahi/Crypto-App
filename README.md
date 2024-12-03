@@ -25,4 +25,4 @@ git clone https://github.com/Soudabeh-Noorollahi/Crypto-App.git
 cd  Crypto-App
 npm install
 npm start
->>>>>>> 
+
