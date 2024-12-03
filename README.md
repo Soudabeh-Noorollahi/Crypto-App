@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -25,4 +25,4 @@ git clone https://github.com/Soudabeh-Noorollahi/Crypto-App.git
 cd  Crypto-App
 npm install
 npm start
->>>>>>> 25ac315af72246721823dbad1923f464539dba70
+>>>>>>> 
