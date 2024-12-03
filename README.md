@@ -2,7 +2,7 @@
 A React-based cryptocurrency price tracker with real-time updates
 # Crypto Dashboard
 
-A professional cryptocurrency dashboard built with React for tracking market trends and analytics.
+A React-based cryptocurrency price tracker with real-time updates
 
 ## Features
 - Real-time price updates
@@ -11,7 +11,7 @@ A professional cryptocurrency dashboard built with React for tracking market tre
 
 ## Getting Started
 ```bash
-git clone https://github.com/username/repository-name.git
-cd repository-name
+git clone https://github.com/Soudabeh-Noorollahi/Crypto-App.git
+cd  Crypto-App
 npm install
 npm start
