@@ -1,21 +1,29 @@
 import { useState } from "react";
 import { useEffect } from "react";
 import TableCoin from "../Modules/TableCoin";
+import { getCoinList } from "../../Services/cryptoApi";
+import Pagination from "../Modules/Pagination";
 
 function HomePage() {
   const [coins, setCoins] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
-    fetch(
-      "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=20&page=1&sparkline=false&locale=en&x_cg_demo_api_key=CG-LAfdzTX5LATsBYbEfK68g4UE"
-    )
-      .then((res) => res.json())
-      .then((json) => setCoins(json));
-  }, []);
+    setIsLoading(true);
+    const getData = async () => {
+      const res = await fetch(getCoinList(page));
+      const json = await res.json();
+      setCoins(json);
+      setIsLoading(false);
+    };
+    getData();
+  }, [page]);
 
   return (
     <div>
-      <TableCoin coins={coins} />
+      <TableCoin coins={coins} isLoading={isLoading} />
+      <Pagination page={page} setPage={setPage} />
     </div>
   );
 }
