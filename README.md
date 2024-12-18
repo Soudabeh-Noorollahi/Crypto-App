@@ -3,9 +3,6 @@
 
 # Crypto-App
 A React-based cryptocurrency price tracker with real-time updates
-# Crypto Dashboard
-
-A React-based cryptocurrency price tracker with real-time updates
 
 ## Features
 - Real-time price updates
